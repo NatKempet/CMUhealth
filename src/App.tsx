@@ -22,7 +22,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/CMUhealth" element={<Index />} />
+          <Route path="/" element={<Index />} />
           <Route path="/student-medical-services" element={<StudentMedicalServices />} />
           <Route path="/dental-services" element={<DentalServices />} />
           <Route path="/free-medication" element={<FreeMedication />} />
