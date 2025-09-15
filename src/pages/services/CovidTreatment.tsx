@@ -1,24 +1,27 @@
 import { Button } from "../../components/ui/button";
 import { Card } from "../../components/ui/card";
-import { ArrowLeft, Clock, MapPin, Phone, Shield } from "lucide-react";
+import { ArrowLeft, Clock, Phone, Shield, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const CovidTreatment = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <div className="bg-gradient-hero py-16">
+      <div className="bg-gradient-to-r from-purple-600 to-purple-800 py-16">
         <div className="container mx-auto px-4">
           <Link to="/">
-            <Button variant="secondary" className="mb-6">
+            <Button
+              variant="secondary"
+              className="mb-6 bg-purple-100 text-purple-800 hover:bg-purple-200"
+            >
               <ArrowLeft className="w-4 h-4 mr-2" />
               กลับหน้าหลัก
             </Button>
           </Link>
-          <h1 className="text-4xl font-bold text-primary-foreground mb-4">
+          <h1 className="text-4xl font-bold text-white mb-4">
             บริการรักษา Covid-19
           </h1>
-          <p className="text-xl text-primary-foreground/90">
+          <p className="text-xl text-purple-100/90">
             บริการดูแลรักษาและป้องกัน Covid-19 สำหรับนักศึกษา มช.
           </p>
         </div>
@@ -26,135 +29,86 @@ const CovidTreatment = () => {
 
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Main Information */}
+          {/* Main Info */}
           <div className="space-y-6">
-            <Card className="p-6 shadow-card">
-              <h2 className="text-2xl font-semibold text-primary mb-4 flex items-center">
-                <Shield className="w-6 h-6 mr-2" />
-                บริการที่ให้
+            <Card className="p-6 shadow-card border-l-4 border-purple-600">
+              <h2 className="text-2xl font-semibold text-purple-700 mb-4 flex items-center">
+                <Shield className="w-6 h-6 mr-2 text-purple-600" />
+                บริการผ่านระบบออนไลน์
               </h2>
-              <div className="space-y-4 text-foreground">
-                <div className="border-l-4 border-primary pl-4">
-                  <h3 className="font-semibold">การตรวจหา Covid-19</h3>
-                  <p>Antigen Test Kit (ATK) และ RT-PCR ฟรีสำหรับนักศึกษา</p>
-                </div>
-                <div className="border-l-4 border-primary pl-4">
-                  <h3 className="font-semibold">การรักษาผู้ป่วยอาการเล็กน้อย</h3>
-                  <p>ยาบรรเทาอาการ การดูแลที่บ้าน คำแนะนำการดูแลตนเอง</p>
-                </div>
-                <div className="border-l-4 border-primary pl-4">
-                  <h3 className="font-semibold">การฉีดวัคซีน</h3>
-                  <p>วัคซีนป้องกัน Covid-19 ตามแผนของกระทรวงสาธารณสุข</p>
-                </div>
+              <p className="mb-4 text-foreground">
+                เข้ารับบริการรักษา Covid-19 ได้ง่าย ๆ ผ่านระบบออนไลน์ของมหาวิทยาลัยเชียงใหม่
+              </p>
+              <a
+                href="https://covid.scmc.cmu.ac.th/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-4 py-2 rounded-lg bg-purple-600 text-white hover:bg-purple-700 transition"
+              >
+                เข้าสู่ระบบบริการ
+                <ExternalLink className="w-4 h-4 ml-2" />
+              </a>
+              <div className="mt-6 space-y-3 bg-purple-50 p-4 rounded-lg border border-purple-200">
+                <ul className="list-disc list-inside space-y-2 text-purple-800">
+                  <li>
+                    <span className="font-semibold">ไม่ต้องไปนั่งรอตรวจ</span> →
+                    เจ้าหน้าที่จะโทรติดต่อตามขั้นตอน
+                  </li>
+                  <li>
+                    <span className="font-semibold">รับยาที่จุดให้บริการ</span>{" "}
+                    และสามารถดาวน์โหลดเอกสารยืนยันฟรี
+                  </li>
+                  <li>
+                    ใช้เอกสารยืนยันเพื่อ{" "}
+                    <span className="font-semibold">ลาเรียน</span> ได้
+                  </li>
+                </ul>
               </div>
-            </Card>
-
-            <Card className="p-6 shadow-card">
-              <h2 className="text-2xl font-semibold text-primary mb-4">เมื่อมีอาการสงสัย</h2>
-              <div className="space-y-4 text-foreground">
-                <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
-                  <h3 className="font-semibold text-yellow-800 mb-2">อาการที่ต้องระวัง</h3>
-                  <ul className="list-disc list-inside space-y-1 text-yellow-700">
-                    <li>มีไข้ เหนื่อย เพลีย</li>
-                    <li>ไอ เจ็บคอ มีน้ำมูก</li>
-                    <li>ปวดศีรษะ ปวดกล้ามเนื้อ</li>
-                    <li>เสียรสชาติ กลิ่น</li>
-                  </ul>
-                </div>
-                <ol className="list-decimal list-inside space-y-2">
-                  <li>แยกตัวจากคนอื่นทันที</li>
-                  <li>โทรศัพท์ติดต่อคลินิกสุขภาพนักศึกษา</li>
-                  <li>มาตรวจที่โรงพยาบาล มช.</li>
-                  <li>รอผลการตรวจและปฏิบัติตามคำแนะนำ</li>
-                </ol>
-              </div>
-            </Card>
-
-            <Card className="p-6 shadow-card">
-              <h2 className="text-2xl font-semibold text-primary mb-4">การดูแลตนเองที่บ้าน</h2>
-              <ul className="list-disc list-inside space-y-2 text-foreground">
-                <li>แยกห้องพักจากคนอื่นในบ้าน</li>
-                <li>ใส่หน้ากากอนามัยตลอดเวลา</li>
-                <li>ดื่มน้ำและพักผ่อนให้เพียงพอ</li>
-                <li>รับประทานยาตามคำแนะนำของแพทย์</li>
-                <li>วัดไข้และติดตามอาการเป็นประจำ</li>
-                <li>หากอาการแย่ลง ให้รีบมาโรงพยาบาล</li>
-              </ul>
             </Card>
           </div>
 
-          {/* Additional Information */}
+          {/* Additional Info */}
           <div className="space-y-6">
-            <Card className="p-6 shadow-card">
-              <h2 className="text-2xl font-semibold text-primary mb-4">การป้องกัน</h2>
-              <div className="space-y-4 text-foreground">
-                <div className="border-l-4 border-green-500 pl-4">
-                  <h3 className="font-semibold text-green-700">มาตรการป้องกัน</h3>
-                  <ul className="list-disc list-inside mt-2 space-y-1">
-                    <li>ใส่หน้ากากอนามัยในที่สาธารณะ</li>
-                    <li>ล้างมือบ่อยๆ ด้วยสบู่</li>
-                    <li>เว้นระยะห่างทางสังคม</li>
-                    <li>หลีกเลี่ยงการไปในที่แออัด</li>
-                    <li>ฉีดวัคซีนครบตามกำหนด</li>
-                  </ul>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-6 shadow-card">
-              <h2 className="text-2xl font-semibold text-primary mb-4 flex items-center">
-                <MapPin className="w-6 h-6 mr-2" />
-                สถานที่ให้บริการ
-              </h2>
-              <div className="space-y-4 text-foreground">
-                <div>
-                  <h3 className="font-semibold">คลินิก Covid-19 มช.</h3>
-                  <p>อาคารเฉลิมพระเกียรติ โรงพยาบาลมหาวิทยาลัยเชียงใหม่</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold">จุดตรวจ ATK</h3>
-                  <p>หน้าอาคารกิจการนักศึกษา และหอพักนักศึกษา</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold">จุดฉีดวัคซีน</h3>
-                  <p>โรงพยาบาลมหาวิทยาลัยเชียงใหม่ และสำนักกีฬา มช.</p>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-6 shadow-card">
-              <h2 className="text-2xl font-semibold text-primary mb-4 flex items-center">
-                <Clock className="w-6 h-6 mr-2" />
-                เวลาให้บริการ
-              </h2>
-              <div className="space-y-3 text-foreground">
-                <div>
-                  <h3 className="font-semibold">คลินิก Covid-19</h3>
-                  <p>ทุกวัน 08:00 - 20:00 น.</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold">จุดตรวจ ATK</h3>
-                  <p>วันจันทร์ - ศุกร์ 07:00 - 17:00 น.</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold">ฉีดวัคซีน</h3>
-                  <p>ตามประกาศ (โดยปกติ วันจันทร์ - ศุกร์)</p>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-6 shadow-card">
-              <h2 className="text-2xl font-semibold text-primary mb-4 flex items-center">
-                <Phone className="w-6 h-6 mr-2" />
-                ติดต่อฉุกเฉิน
+            <Card className="p-6 shadow-card border-l-4 border-purple-600">
+              <h2 className="text-2xl font-semibold text-purple-700 mb-4 flex items-center">
+                <Phone className="w-6 h-6 mr-2 text-purple-600" />
+                ติดต่อสอบถาม
               </h2>
               <div className="space-y-2 text-foreground">
-                <p><strong>คลินิก Covid-19:</strong> 053-946-700</p>
-                <p><strong>ห้องฉุกเฉิน:</strong> 053-946-900</p>
-                <p><strong>สายด่วน Covid:</strong> 1422</p>
-                <p><strong>อีเมล:</strong> covid19@cmu.ac.th</p>
-                <p><strong>Line:</strong> @cmucovid19</p>
+                <p>
+                  <strong>คลินิก Covid-19:</strong>{" "}
+                  <span className="text-purple-700">053-946-700</span>
+                </p>
+                <p>
+                  <strong>ห้องฉุกเฉิน:</strong>{" "}
+                  <span className="text-purple-700">053-946-900</span>
+                </p>
+                <p>
+                  <strong>สายด่วน Covid:</strong>{" "}
+                  <span className="text-purple-700">1422</span>
+                </p>
+                <p>
+                  <strong>อีเมล:</strong>{" "}
+                  <span className="text-purple-700">covid19@cmu.ac.th</span>
+                </p>
+                <p>
+                  <strong>Line:</strong>{" "}
+                  <span className="text-purple-700">@cmucovid19</span>
+                </p>
               </div>
+            </Card>
+
+            <Card className="p-6 shadow-card border-l-4 border-purple-600">
+              <h2 className="text-2xl font-semibold text-purple-700 mb-4 flex items-center">
+                <Clock className="w-6 h-6 mr-2 text-purple-600" />
+                เวลาให้บริการ
+              </h2>
+              <p className="text-foreground">
+                <strong>ทุกวัน:</strong> 08:00 - 20:00 น.
+              </p>
+              <p className="text-sm text-muted-foreground mt-2">
+                *อาจมีการเปลี่ยนแปลงตามประกาศของมหาวิทยาลัย
+              </p>
             </Card>
           </div>
         </div>
