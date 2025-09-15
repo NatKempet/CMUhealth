@@ -1,5 +1,6 @@
+// ...existing imports
 import { ServiceCard } from "../components/ServiceCard";
-import { Heart, Smile, Pill, Car, Shield, Globe } from "lucide-react";
+import { Heart, Smile, Pill, Car, Shield, Globe, FileText } from "lucide-react";
 
 const Index = () => {
   const services = [
@@ -43,6 +44,13 @@ const Index = () => {
         "Comprehensive healthcare services for international students with English support",
       icon: Globe,
       href: "/international-students",
+    },
+    {
+      title: "สิทธิสวัสดิการด้านการรักษาพยาบาลสำหรับนักศึกษา",
+      description:
+        "ข้อมูลสวัสดิการและสิทธิประโยชน์ด้านการรักษาพยาบาลสำหรับนักศึกษามหาวิทยาลัยเชียงใหม่",
+      icon: FileText,
+      href: "/student-health-welfare",
     },
   ];
 
@@ -91,8 +99,15 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Student Health Welfare Section */}
+      <section className="py-20 bg-violet-50">
+        <div className="container mx-auto px-4 max-w-5xl">
+        
+        </div>
+      </section>
+
       {/* Contact Section */}
-      <section className="py-16 bg-violet-50">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-violet-700 mb-6">
@@ -104,19 +119,10 @@ const Index = () => {
                   ข้อมูลติดต่อทั่วไป
                 </h3>
                 <div className="text-violet-800">
-                  <p>
-                    <strong>โทรศัพท์:</strong> 053-945-000
-                  </p>
-                  <p>
-                    <strong>อีเมล:</strong> health@cmu.ac.th
-                  </p>
-                  <p>
-                    <strong>ที่อยู่:</strong> โรงพยาบาลมหาวิทยาลัยเชียงใหม่
-                  </p>
-                  <p>
-                    110 ถนนอินทวโรรส ตำบลศรีภูมิ อำเภอเมือง จังหวัดเชียงใหม่
-                    50200
-                  </p>
+                  <p><strong>โทรศัพท์:</strong> 053-945-000</p>
+                  <p><strong>อีเมล:</strong> health@cmu.ac.th</p>
+                  <p><strong>ที่อยู่:</strong> โรงพยาบาลมหาวิทยาลัยเชียงใหม่</p>
+                  <p>110 ถนนอินทวโรรส ตำบลศรีภูมิ อำเภอเมือง จังหวัดเชียงใหม่ 50200</p>
                 </div>
               </div>
               <div className="space-y-4">
@@ -124,18 +130,10 @@ const Index = () => {
                   Emergency Contact
                 </h3>
                 <div className="text-violet-800">
-                  <p>
-                    <strong>Emergency:</strong> 053-946-900
-                  </p>
-                  <p>
-                    <strong>International:</strong> +66 53-946-050
-                  </p>
-                  <p>
-                    <strong>Email:</strong> emergency@cmu.ac.th
-                  </p>
-                  <p>
-                    <strong>24/7 Hotline:</strong> Available for all students
-                  </p>
+                  <p><strong>Emergency:</strong> 053-946-900</p>
+                  <p><strong>International:</strong> +66 53-946-050</p>
+                  <p><strong>Email:</strong> emergency@cmu.ac.th</p>
+                  <p><strong>24/7 Hotline:</strong> Available for all students</p>
                 </div>
               </div>
             </div>
@@ -147,12 +145,8 @@ const Index = () => {
       <footer className="bg-violet-700 text-violet-50 py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-lg font-semibold mb-2">CMU Health Services</p>
-          <p className="opacity-90">
-            มหาวิทยาลัยเชียงใหม่ | Chiang Mai University
-          </p>
-          <p className="text-sm opacity-75 mt-4">
-            © 2024 Chiang Mai University. All rights reserved.
-          </p>
+          <p className="opacity-90">มหาวิทยาลัยเชียงใหม่ | Chiang Mai University</p>
+          <p className="text-sm opacity-75 mt-4">© 2024 Chiang Mai University. All rights reserved.</p>
         </div>
       </footer>
     </div>
