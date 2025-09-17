@@ -18,9 +18,7 @@ const FreeMedication = () => {
               กลับหน้าหลัก
             </Button>
           </Link>
-          <h1 className="text-4xl font-bold text-white mb-4">
-            สิทธิรับยา ฟรี
-          </h1>
+          <h1 className="text-4xl font-bold text-white mb-4">สิทธิรับยา ฟรี</h1>
           <p className="text-xl text-purple-100">
             ข้อมูลการรับยาฟรีสำหรับนักศึกษามหาวิทยาลัยเชียงใหม่
           </p>
@@ -90,14 +88,14 @@ const FreeMedication = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                  <iframe
-                      src="https://www.google.com/maps?q=Q273+536+%E0%B8%A8%E0%B8%B9%E0%B8%99%E0%B8%A2%E0%B9%8C%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%9E%E0%B8%A4%E0%B8%92%E0%B8%9E%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%AA%E0%B8%B9%E0%B8%87%E0%B8%AD%E0%B8%B2%E0%B8%A2%E0%B8%B8+%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88+Senior+Wellness+Center+%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%A5%E0%B8%B2%E0%B8%99+%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88+%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88+50100&ftid=0x30da31bef30729bb:0xec10fb44fb9b2ffa&entry=gps&lucs=,94284457,94224825,94227247,94227248,94231188,47071704,47069508,94218641,94282134,94203019,47084304&g_ep=CAISEjI1LjM1LjAuNzk5MDg4MzU1MBgAIIgnKmMsOTQyODQ0NTcsOTQyMjQ4MjUsOTQyMjcyNDcsOTQyMjcyNDgsOTQyMzExODgsNDcwNzE3MDQsNDcwNjk1MDgsOTQyMTg2NDEsOTQyODIxMzQsOTQyMDMwMTksNDcwODQzMDRCAlRI&skid=40c2fa46-8136-424d-8f89-795299b56672&g_st=ipc"
-                      width="100%"
-                      height="250"
-                      style={{ border: 0 }}
-                      allowFullScreen
-                      loading="lazy"
-                    ></iframe>
+                    <div className="mt-3">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4481.206737698732!2d99.0026321!3d18.762910799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da31bef30729bb%3A0xec10fb44fb9b2ffa!2z4Lio4Li54LiZ4Lii4LmM4Liq4LmI4LiH4LmA4Liq4Lij4Li04Lih4Lie4Lik4LiS4Lie4Lil4Lix4LiH4Lic4Li54LmJ4Liq4Li54LiH4Lit4Liy4Lii4Li4IOC4oeC4q-C4suC4p-C4tOC4l-C4ouC4suC4peC4seC4ouC5gOC4iuC4teC4ouC4h-C5g-C4q-C4oeC5iCBTZW5pb3IgV2VsbG5lc3MgQ2VudGVy!5e1!3m2!1sth!2sth!4v1758115994867!5m2!1sth!2sth"
+                        width="100%"
+                        height="250"
+                        loading="lazy"
+                      ></iframe>
+                    </div>
                     <Button className="mt-3 bg-purple-600 hover:bg-purple-700 text-white">
                       เปิด Google Maps
                     </Button>
