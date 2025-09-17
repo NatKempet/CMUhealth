@@ -26,6 +26,7 @@ const DentalServices = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Main Information */}
           <div className="space-y-6">
+            {/* Services */}
             <Card className="p-6 shadow-card bg-white">
               <h2 className="text-2xl font-semibold text-purple-700 mb-4 flex items-center">
                 <Smile className="w-6 h-6 mr-2" />
@@ -53,6 +54,7 @@ const DentalServices = () => {
               </div>
             </Card>
 
+            {/* Documents */}
             <Card className="p-6 shadow-card bg-white">
               <h2 className="text-2xl font-semibold text-purple-700 mb-4">เอกสารที่ต้องเตรียม</h2>
               <ul className="list-disc list-inside space-y-2 text-foreground">
@@ -63,6 +65,7 @@ const DentalServices = () => {
               </ul>
             </Card>
 
+            {/* Costs */}
             <Card className="p-6 shadow-card bg-white">
               <h2 className="text-2xl font-semibold text-purple-700 mb-4">ค่าใช้จ่าย</h2>
               <div className="space-y-3 text-foreground">
@@ -80,7 +83,7 @@ const DentalServices = () => {
 
           {/* Additional Info */}
           <div className="space-y-6">
-            {/* Service Locations and Times */}
+            {/* Service Locations */}
             <Card className="p-6 shadow-card bg-white">
               <h2 className="text-2xl font-semibold text-purple-700 mb-4 flex items-center">
                 <MapPin className="w-6 h-6 mr-2" />
@@ -151,6 +154,65 @@ const DentalServices = () => {
                 <p><strong>โทรศัพท์:</strong> 053-944-451-2</p>
                 <p><strong>อีเมล:</strong> dental@cmu.ac.th</p>
                 <p><strong>เวลานัดหมาย:</strong> 08:00 - 16:00 น.</p>
+              </div>
+            </Card>
+
+            {/* Maps */}
+            <Card className="p-6 shadow-card bg-white">
+              <h2 className="text-2xl font-semibold text-purple-700 mb-4 flex items-center">
+                <MapPin className="w-6 h-6 mr-2" />
+                แผนที่และสถานที่
+              </h2>
+              <div className="space-y-6">
+                {/* คลีนิคทันตกรรมพิเศษ */}
+                <div>
+                  <h3 className="text-lg font-semibold text-purple-700">
+                    1. คลีนิคทันตกรรมพิเศษ คณะทันตแพทยศาสตร์ มช.
+                  </h3>
+                  <a
+                    href="https://maps.app.goo.gl/aer8ShazjZ44nf1d8?g_st=ipc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-violet-600 underline"
+                  >
+                    เปิดใน Google Maps
+                  </a>
+                  <div className="mt-3">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.376193460703!2d98.9538!3d18.7940!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a73e083dfd5%3A0x6de1e2f07c7a3b8f!2z4LmA4Lit4Lij4LmM4LiU4Li04LiZ4LmA4Lih4Li04LmI4Lih4Lij4LmI4Lih4Lix4LiE4LmA4Lir4Liy4Lih!5e0!3m2!1sth!2sth!4v1694955000000!5m2!1sth!2sth"
+                      width="100%"
+                      height="250"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+                </div>
+
+                {/* คลินิกทันตกรรมศูนย์สุขภาพ */}
+                <div>
+                  <h3 className="text-lg font-semibold text-purple-700">
+                    2. คลินิกทันตกรรมศูนย์สุขภาพ มช.
+                  </h3>
+                  <a
+                    href="https://maps.app.goo.gl/tBckrDpkvpj1nKTe6?g_st=ipc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-violet-600 underline"
+                  >
+                    เปิดใน Google Maps
+                  </a>
+                  <div className="mt-3">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.379032178395!2d98.95157097579714!3d18.79385058248241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a73d98fd7c7%3A0x7b6c5f6b8c5e5a5!2z4Lij4Lix4LiU4Liy4LiZ4LmA4Liq4LmM4LmA4Lit4LiH4LiB4Lip4Lix4Liq4LmI!5e0!3m2!1sth!2sth!4v1694953040169!5m2!1sth!2sth"
+                      width="100%"
+                      height="250"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+                </div>
               </div>
             </Card>
           </div>

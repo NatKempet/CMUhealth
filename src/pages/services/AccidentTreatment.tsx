@@ -91,7 +91,7 @@ const AccidentTreatment = () => {
                 </ul>
               </div>
               <p className="mt-4 text-sm text-muted-foreground">
-                เวลาราชการ: 08.30–11.30 และ 13.00–16.30 น. (แปะแผนที่)
+                เวลาราชการ: 08.30–11.30 และ 13.00–16.30 น.
               </p>
             </Card>
 
@@ -115,13 +115,35 @@ const AccidentTreatment = () => {
                 <MapPin className="w-6 h-6 mr-2 text-purple-600" />
                 สถานที่ยื่นเรื่อง
               </h2>
-              <div className="text-foreground">
+              <div className="text-foreground space-y-3">
                 <p>
                   <strong className="text-purple-800">
                     SD One Stop Service
                   </strong>{" "}
                   ชั้น 1 อาคารพลศึกษา กองพัฒนานักศึกษา
                 </p>
+                <a
+                  href="https://maps.app.goo.gl/C9rdNmmEeBLMCzJD6?g_st=ipc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="bg-purple-600 hover:bg-purple-700 text-white">
+                    เปิด Google Maps
+                  </Button>
+                </a>
+                {/* Mini Map Embed */}
+                <div className="mt-4">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2419.399!2d98.9500!3d18.7960!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a7bXXXXXXXX%3A0xXXXXXXXXXXXX!2sChiang%20Mai%20University!5e0!3m2!1sth!2sth!4v1694950000000"
+                    width="100%"
+                    height="250"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="SD One Stop Service Map"
+                  ></iframe>
+                </div>
               </div>
             </Card>
 

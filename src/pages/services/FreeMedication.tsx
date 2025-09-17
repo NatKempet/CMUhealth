@@ -85,6 +85,23 @@ const FreeMedication = () => {
                 <div>
                   <h3 className="font-semibold">ร้านยาพฤฒพลัง</h3>
                   <p>คณะเภสัชศาสตร์ มหาวิทยาลัยเชียงใหม่</p>
+                  <a
+                    href="https://maps.app.goo.gl/XFW54SWAG2adL4cK8?g_st=ipc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                  <iframe
+                      src="https://maps.app.goo.gl/XFW54SWAG2adL4cK8?g_st=ipc"
+                      width="100%"
+                      height="250"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                    ></iframe>
+                    <Button className="mt-3 bg-purple-600 hover:bg-purple-700 text-white">
+                      เปิด Google Maps
+                    </Button>
+                  </a>
                 </div>
               </div>
             </Card>
