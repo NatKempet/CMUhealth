@@ -73,9 +73,7 @@ const AccidentTreatment = () => {
                   ประกันอุบัติเหตุ 10,000 บาท/กรณี
                 </span>{" "}
                 ที่{" "}
-                <strong className="text-purple-800">
-                  SD One Stop Service
-                </strong>{" "}
+                <strong className="text-purple-800">SD One Stop Service</strong>{" "}
                 (ชั้น 1 อาคารพลศึกษา กองพัฒนานักศึกษา)
               </p>
               <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
@@ -134,7 +132,7 @@ const AccidentTreatment = () => {
                 {/* Mini Map Embed */}
                 <div className="mt-4">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2419.399!2d98.9500!3d18.7960!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a7bXXXXXXXX%3A0xXXXXXXXXXXXX!2sChiang%20Mai%20University!5e0!3m2!1sth!2sth!4v1694950000000"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4480.299361362164!2d98.95773559999999!3d18.7970326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3beed323cae3%3A0xacaf37a426eca751!2zU0REIE9uZSBTdG9wIFNlcnZpY2UgIuC4leC4teC5ieC5gOC4lOC4teC4ouC4p-C4ruC4ueC5ieC5gOC4o-C4t-C5iOC4reC4hyI!5e1!3m2!1sth!2sth!4v1758116595238!5m2!1sth!2sth"
                     width="100%"
                     height="250"
                     style={{ border: 0 }}
@@ -153,7 +151,8 @@ const AccidentTreatment = () => {
                 เวลาให้บริการ
               </h2>
               <p>
-                <strong>วันจันทร์ - ศุกร์:</strong> 08:30 - 11:30 น. และ 13:00 - 16:30 น.
+                <strong>วันจันทร์ - ศุกร์:</strong> 08:30 - 11:30 น. และ 13:00 -
+                16:30 น.
               </p>
               <p className="text-sm text-muted-foreground mt-2">
                 *ปิดวันเสาร์-อาทิตย์ และวันหยุดนักขัตฤกษ์
@@ -170,7 +169,9 @@ const AccidentTreatment = () => {
               </p>
               <p>
                 <strong>อีเมล:</strong>{" "}
-                <span className="text-purple-700">student-affair@cmu.ac.th</span>
+                <span className="text-purple-700">
+                  student-affair@cmu.ac.th
+                </span>
               </p>
             </Card>
           </div>

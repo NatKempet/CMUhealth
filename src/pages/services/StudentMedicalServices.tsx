@@ -121,7 +121,7 @@ const AccidentTreatment = () => {
                 </a>
                 <div className="mt-3">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.379032178395!2d98.95157097579714!3d18.79385058248241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a73d98fd7c7%3A0x7b6c5f6b8c5e5a5!2z4Lij4Lix4LiU4Liy4LiZ4LmA4Liq4LmM4LmA4Lit4LiH4LiB4Lip4Lix4Liq4LmI!5e0!3m2!1sth!2sth!4v1694953040169!5m2!1sth!2sth"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4480.236441021277!2d98.9556246!3d18.7993965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3b3400108177%3A0x58aa9059391c035b!2z4Lio4Li54LiZ4Lii4LmM4Liq4Li44LiC4Lig4Liy4Lie4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiK4Li14Lii4LiH4LmD4Lir4Lih4LmI!5e1!3m2!1sth!2sth!4v1758116273136!5m2!1sth!2sth"
                     width="100%"
                     height="250"
                     style={{ border: 0 }}
@@ -153,7 +153,7 @@ const AccidentTreatment = () => {
                 </a>
                 <div className="mt-3">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.3282290734067!2d98.96716807579721!3d18.79643928248109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a73b85c7427%3A0x9a6f83b1f3e2c5!2z4Liq4Li04LiV4Lij4Liw4LiZ4Li04LiU4Li04LiZ4LmA4LiI4Lit4LiH4Lih4Lih!5e0!3m2!1sth!2sth!4v1694953146105!5m2!1sth!2sth"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5421.378975003165!2d98.9750487214136!3d18.78947572875295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a86841caa53%3A0xcdf7c4a284655f0e!2z4LmC4Lij4LiH4Lie4Lii4Liy4Lia4Liy4Lil4Lih4Lir4Liy4Lij4Liy4LiK4LiZ4LiE4Lij4LmA4LiK4Li14Lii4LiH4LmD4Lir4Lih4LmI!5e1!3m2!1sth!2sth!4v1758116386249!5m2!1sth!2sth"
                     width="100%"
                     height="250"
                     style={{ border: 0 }}
