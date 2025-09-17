@@ -86,7 +86,7 @@ const AccidentTreatment = () => {
           {/* Contact & Location */}
           <Card className="p-6 shadow-lg bg-white">
             <h2 className="text-2xl font-semibold mb-4 flex items-center text-purple-700">
-              <MapPin className="w-6 h-6 mr-2" /> สถานที่และติดต่อ
+               ติดต่อ
             </h2>
             <ul className="list-disc list-inside text-purple-800 space-y-2">
               <li>สำนักกิจการนักศึกษา, อาคารกิจการนักศึกษา ชั้น 2 ห้อง 201</li>
