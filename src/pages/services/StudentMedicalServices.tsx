@@ -15,9 +15,9 @@ const AccidentTreatment = () => {
               กลับหน้าหลัก
             </Button>
           </Link>
-          <h1 className="text-4xl font-bold mb-4">การใช้สิทธิรักษาพยาบาลกรณีอุบัติเหตุจากรถ</h1>
+          <h1 className="text-4xl font-bold mb-4">การรับบริการรักษาพยาบาลสำหรับนักศึกษา มช.</h1>
           <p className="text-xl text-white/90">
-            ข้อมูลการใช้สิทธิประกันอุบัติเหตุและการรักษาพยาบาลทั่วไป
+            บริการรักษาพยาบาลทั่วไป ตรวจสุขภาพ และการดูแลสุขภาพเบื้องต้นสำหรับนักศึกษา
           </p>
         </div>
       </div>
@@ -95,6 +95,74 @@ const AccidentTreatment = () => {
               <li>Line: @cmu_sa</li>
               <li>Email: student-affair@cmu.ac.th</li>
             </ul>
+          </Card>
+                    {/* Location & Google Maps Integration */}
+          <Card className="p-6 shadow-lg bg-white">
+            <h2 className="text-2xl font-semibold mb-4 flex items-center text-purple-700">
+              <MapPin className="w-6 h-6 mr-2" /> สถานที่และแผนที่
+            </h2>
+            <div className="space-y-6">
+              {/* ศูนย์สุขภาพ มช. */}
+              <div>
+                <h3 className="text-lg font-semibold text-purple-700">
+                  1. ศูนย์สุขภาพ มช.
+                </h3>
+                <p className="text-purple-800">
+                  อาคารศูนย์สุขภาพ มช. ชั้น 1 <br />
+                  (เวลาราชการ จ–ศ 08.00–20.00, เสาร์/นักขัตฤกษ์ 08.00–16.00)
+                </p>
+                <a
+                  href="https://maps.app.goo.gl/tBckrDpkvpj1nKTe6?g_st=ipc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-violet-600 underline"
+                >
+                  เปิดใน Google Maps
+                </a>
+                <div className="mt-3">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.379032178395!2d98.95157097579714!3d18.79385058248241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a73d98fd7c7%3A0x7b6c5f6b8c5e5a5!2z4Lij4Lix4LiU4Liy4LiZ4LmA4Liq4LmM4LmA4Lit4LiH4LiB4Lip4Lix4Liq4LmI!5e0!3m2!1sth!2sth!4v1694953040169!5m2!1sth!2sth"
+                    width="100%"
+                    height="250"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+
+              {/* โรงพยาบาลมหาราชนครเชียงใหม่ */}
+              <div>
+                <h3 className="text-lg font-semibold text-purple-700">
+                  2. โรงพยาบาลมหาราชนครเชียงใหม่ (สวนดอก)
+                </h3>
+                <p className="text-purple-800">
+                  จุดบริการหลายแห่ง เช่น:
+                  <br />• หน่วย CSC ชั้น 1 (เวชศาสตร์ครอบครัว)
+                  <br />• อาคารบุญสม มาร์ติน (ห้องตรวจนอกเวลา)
+                  <br />• หน่วยตรวจฉุกเฉิน (24 ชม.)
+                  <br />• อาคารเฉลิมพระบารมี ชั้น 2 (งานสังคมสงเคราะห์)
+                </p>
+                <a
+                  href="https://maps.app.goo.gl/DRm13jTWemdreJ9b6?g_st=ipc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-violet-600 underline"
+                >
+                  เปิดใน Google Maps
+                </a>
+                <div className="mt-3">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.3282290734067!2d98.96716807579721!3d18.79643928248109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a73b85c7427%3A0x9a6f83b1f3e2c5!2z4Liq4Li04LiV4Lij4Liw4LiZ4Li04LiU4Li04LiZ4LmA4LiI4Lit4LiH4Lih4Lih!5e0!3m2!1sth!2sth!4v1694953146105!5m2!1sth!2sth"
+                    width="100%"
+                    height="250"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </Card>
         </div>
       </div>
